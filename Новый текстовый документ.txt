@@ -4,3 +4,4 @@ https://discord.com/api/v10/webhooks/1240664065848905888/33a08Mwbyt-m1i0qZjxUGqH
 https://discord.com/api/v10/webhooks/1241482525466034306/8etdjK3oQnVBk0QU5GBJvfyfLWO7mPKY_w2GeBtVYgo0fjeZ1nAoxBoyvwpYoeT-Pw5v -- текстуры
 https://discord.com/api/v10/webhooks/1241028117116485653/desYG3B4HvA2Q9unhFGqRsV6rmlIHB7WlNvo7PEgDhcbuhYoJyIiBaRYSb7mDh6nXRv1 -- карты
 https://discord.com/api/webhooks/1251878121272246343/ZiaKRU3hRFJ3PDdrxBHv6SeiUD0HSY80RnsKQRkDj4_exCeLI5hBotS0hR3t8xLoghyj -- моды_Молодой
+[скачать](https://github.com/Vladik268/p2/raw/main/Waypoints.zip) -- пример
