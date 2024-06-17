@@ -1,7 +1,0 @@
-https://discord.com/api/v10/webhooks/1241710640368975912/1BO2lm5hR6_DlHdprJ25vF2Nl7k9_QsS8pmWrp68yqGSg06eu5VffyvTkc23maJYuawH -- роли
-https://discord.com/api/v10/webhooks/1240663082317905970/Rlnw0eVTnXhDIEzeGKf25V4PPQk5HQHFnsYb6TfESpMRvs5VbFbuh-zp-3Wt1RhO85g5 -- моды
-https://discord.com/api/v10/webhooks/1240664065848905888/33a08Mwbyt-m1i0qZjxUGqHHOs5Tw_JhS5OgAJKjwTYqGmILhZomCTaN90nTlSx-AY6R -- моды_hack
-https://discord.com/api/v10/webhooks/1241482525466034306/8etdjK3oQnVBk0QU5GBJvfyfLWO7mPKY_w2GeBtVYgo0fjeZ1nAoxBoyvwpYoeT-Pw5v -- текстуры
-https://discord.com/api/v10/webhooks/1241028117116485653/desYG3B4HvA2Q9unhFGqRsV6rmlIHB7WlNvo7PEgDhcbuhYoJyIiBaRYSb7mDh6nXRv1 -- карты
-https://discord.com/api/webhooks/1251878121272246343/ZiaKRU3hRFJ3PDdrxBHv6SeiUD0HSY80RnsKQRkDj4_exCeLI5hBotS0hR3t8xLoghyj -- моды_Молодой
-[скачать](https://github.com/Vladik268/p2/raw/main/Waypoints.zip) -- пример
