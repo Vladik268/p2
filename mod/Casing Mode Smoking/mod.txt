@@ -1,0 +1,8 @@
+{
+	"name" : "Casing Mode Smoking",
+	"description" : "Have you ever wanted to have a quick smoke whilst casing the joint?",
+	"author" : "Cpone",
+	"color" : "153 230 26",
+	"blt_version" : 2,
+	"priority" : 600
+}

@@ -1,0 +1,22 @@
+{
+	"name" : "Force Start",
+	"description" : "Данный мод при нажатии горячей клавиши запускает ограбление без ожидания других игроков",
+	"author" : "hz",
+	"contact" : "hz",
+	"version" : "1",
+	"blt_version" : 2,
+	"priority" : 1,
+	"undisablable" : false,
+	"disable_safe_mode" : true,
+	"keybinds" : [
+		{
+			"keybind_id" : "force_ready",
+			"name" : "Прожатие Готов",
+			"description" : "Принудительное прожатие Готов(Хост)",
+			"script_path" : "force_start.lua",
+			"run_in_menu" : true,
+			"run_in_game" : true,
+			"localized": false
+		}
+    ]
+}

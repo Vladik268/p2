@@ -1,0 +1,8 @@
+{
+	"name" : "Casing Mode Coughing",
+	"description" : "Have you ever wanted to cough on those civilians whilst casing the joint?",
+	"author" : "Cpone",
+	"color" : "153 230 26",
+	"blt_version" : 2,
+	"priority" : 600
+}

@@ -1,0 +1,269 @@
+{
+    "menu_id": "ehi_trackers_menu",
+    "parent_menu" : "ehi_menu",
+    "title": "ehi_trackers_menu",
+    "items": [
+        {
+            "type": "button",
+            "id": "ehi_trackers_next_menu",
+            "title": "ehi_menu_next_page",
+            "next_menu": "ehi_trackers_2_menu",
+            "ehi_ver" : 115
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_mission_trackers_choice",
+            "title": "ehi_show_mission_trackers",
+            "description": "ehi_show_mission_trackers_desc",
+            "callback": ["SetOption", "UpdateTrackerVisibility"],
+            "callback_arguments": "show_mission_trackers",
+            "focus_changed_callback" : "SetFocus",
+            "value": "show_mission_trackers",
+            "default_value": true
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_unlockables_choice",
+            "title": "ehi_show_unlockables",
+            "description": "ehi_show_unlockables_desc",
+            "callback": ["SetOption", "UpdateTrackerVisibility"],
+            "callback_arguments": "show_unlockables",
+            "focus_changed_callback" : "SetFocus",
+            "value": "show_unlockables",
+            "default_value": true,
+            "is_parent" : true,
+            "ehi_ver" : 84
+        },
+        {
+            "type": "button",
+            "id": "ehi_unlockables_menu",
+            "title": "ehi_unlockables_menu",
+            "description": "ehi_unlockables_menu_desc",
+            "next_menu": "ehi_unlockables_menu",
+            "parent": "ehi_show_unlockables_choice",
+            "ehi_ver" : 84
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_gained_xp_choice",
+            "title": "ehi_show_gained_xp",
+            "description": "ehi_show_gained_xp_desc",
+            "callback": ["SetOption", "UpdateTrackerVisibility"],
+            "callback_arguments": "show_gained_xp",
+            "focus_changed_callback": "SetFocus",
+            "value": "show_gained_xp",
+            "parent_func_update" : "UpdateAllXPOptions",
+            "is_parent" : true,
+            "default_value": true
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_xp_in_mission_briefing_only_choice",
+            "title": "ehi_show_xp_in_mission_briefing_only",
+            "description": "ehi_show_xp_in_mission_briefing_only_desc",
+            "callback": "SetOption",
+            "callback_arguments": "show_xp_in_mission_briefing_only",
+            "value": "show_xp_in_mission_briefing_only",
+            "is_parent" : true,
+            "parent" : "ehi_show_gained_xp_choice",
+            "parent_func_update" : "UpdateXPEnabledValue",
+            "default_value": false,
+            "ehi_ver" : 137
+        },
+        {
+            "type": "multiple_choice",
+            "id": "ehi_total_xp_difference_choice",
+            "title": "ehi_total_xp_difference",
+            "description": "ehi_total_xp_difference_desc",
+            "callback": "SetOption",
+            "callback_arguments": "total_xp_difference",
+            "items": [
+                "ehi_total_xp_difference_1",
+                "ehi_gage_tracker_panel_1",
+                "ehi_gage_tracker_panel_2",
+                "ehi_total_xp_difference_2"
+            ],
+            "value": "total_xp_difference",
+            "parent_func" : "GetXPEnabledValue",
+            "default_value": 2,
+            "ehi_ver" : 210
+        },
+        {
+            "type": "multiple_choice",
+            "id": "ehi_xp_format_choice",
+            "title": "ehi_xp_format",
+            "description": "ehi_xp_format_desc",
+            "callback": "SetOption",
+            "callback_arguments": "xp_format",
+            "items": [
+                "ehi_xp_format_1",
+                "ehi_xp_format_2",
+                "ehi_xp_format_3"
+            ],
+            "value": "xp_format",
+            "is_parent" : true,
+            "parent" : "ehi_show_gained_xp_choice",
+            "parent_func_update" : "UpdateXPDiffEnabled",
+            "default_value": 3
+        },
+        {
+            "type": "multiple_choice",
+            "id": "ehi_xp_panel_choice",
+            "title": "ehi_xp_panel",
+            "description": "ehi_xp_panel_desc",
+            "callback": ["SetOption", "SetXPPanelOption"],
+            "callback_arguments": "xp_panel",
+            "items": [
+                "ehi_xp_panel_1",
+                "ehi_xp_panel_2",
+                "ehi_xp_panel_3",
+                "ehi_xp_panel_4"
+            ],
+            "value": "xp_panel",
+            "parent_func" : "GetXPEnabledValue",
+            "default_value": 2,
+            "ehi_ver" : 53
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_trade_delay_choice",
+            "title": "ehi_show_trade_delay",
+            "description": "ehi_show_trade_delay_desc",
+            "callback": ["SetOption", "UpdateTrackerVisibility"],
+            "callback_arguments": "show_trade_delay",
+            "focus_changed_callback": "SetFocus",
+            "value": "show_trade_delay",
+            "is_parent" : true,
+            "default_value": true
+        },
+        {
+            "type": "multiple_choice",
+            "id": "ehi_show_trade_delay_option_choice",
+            "title": "ehi_show_trade_delay_option",
+            "description": "ehi_show_trade_delay_option_desc",
+            "callback": "SetOption",
+            "callback_arguments": "show_trade_delay_option",
+            "items": [
+                "ehi_show_trade_delay_option_1",
+                "ehi_show_trade_delay_option_2"
+            ],
+            "value": "show_trade_delay_option",
+            "parent" : "ehi_show_trade_delay_choice",
+            "default_value": 1
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_trade_delay_other_players_only_choice",
+            "title": "ehi_show_trade_delay_other_players_only",
+            "description": "ehi_show_trade_delay_other_players_only_desc",
+            "callback": "SetOption",
+            "callback_arguments": "show_trade_delay_other_players_only",
+            "value": "show_trade_delay_other_players_only",
+            "parent": "ehi_show_trade_delay_choice",
+            "default_value": true
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_trade_delay_suppress_in_stealth_choice",
+            "title": "ehi_show_trade_delay_suppress_in_stealth",
+            "description": "ehi_show_trade_delay_suppress_in_stealth_desc",
+            "callback": "SetOption",
+            "callback_arguments": "show_trade_delay_suppress_in_stealth",
+            "value": "show_trade_delay_suppress_in_stealth",
+            "parent": "ehi_show_trade_delay_choice",
+            "default_value": true,
+            "ehi_ver" : 29
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_trade_delay_amount_of_killed_civilians_choice",
+            "title": "ehi_show_trade_delay_amount_of_killed_civilians",
+            "description": "ehi_show_trade_delay_amount_of_killed_civilians_desc",
+            "callback": ["SetOption", "UpdateTradeDelayFormat"],
+            "callback_arguments": "show_trade_delay_amount_of_killed_civilians",
+            "value": "show_trade_delay_amount_of_killed_civilians",
+            "parent": "ehi_show_trade_delay_choice",
+            "default_value": true,
+            "ehi_ver" : 159
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_timers_choice",
+            "title": "ehi_show_timers",
+            "description": "ehi_show_timers_desc",
+            "callback": ["SetOption", "UpdateTrackerVisibility"],
+            "callback_arguments": "show_timers",
+            "focus_changed_callback": "SetFocus",
+            "value": "show_timers",
+            "is_parent" : true,
+            "default_value": true
+        },
+        {
+            "type": "slider",
+            "id": "ehi_show_timers_max_in_group_choice",
+            "title": "ehi_show_timers_max_in_group",
+            "description": "ehi_show_timers_max_in_group_desc",
+            "callback": "SetOption",
+            "callback_arguments" : "show_timers_max_in_group",
+            "value": "show_timers_max_in_group",
+            "default_value": 4,
+            "max": 10,
+            "min": 1,
+            "step": 0,
+            "parent" : "ehi_show_timers_choice",
+            "ehi_ver" : 226
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_camera_loop_choice",
+            "title": "ehi_show_camera_loop",
+            "description": "ehi_show_camera_loop_desc",
+            "callback": ["SetOption", "UpdateTrackerVisibility"],
+            "callback_arguments": "show_camera_loop",
+            "focus_changed_callback": "SetFocus",
+            "value": "show_camera_loop",
+            "default_value": true,
+            "ehi_ver" : 74
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_enemy_turret_trackers_choice",
+            "title": "ehi_show_enemy_turret_trackers",
+            "description": "ehi_show_enemy_turret_trackers_desc",
+            "callback": ["SetOption", "UpdateTrackerVisibility"],
+            "callback_arguments": "show_enemy_turret_trackers",
+            "focus_changed_callback": "SetFocus",
+            "value": "show_enemy_turret_trackers",
+            "default_value": true,
+            "ehi_ver" : 122
+        }
+    ]
+}

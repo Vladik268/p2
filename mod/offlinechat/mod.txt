@@ -1,0 +1,14 @@
+{
+	"name": "Offlinechat",
+	"description": "Enables chat for offline-mode",
+	"author": "",
+	"contact": "",
+	"version": "1.0",
+	"priority": 100,
+	"hooks": [
+		{
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "offlinechat.lua"
+		}
+	]
+}

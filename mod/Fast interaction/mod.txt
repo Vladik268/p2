@@ -1,0 +1,11 @@
+{
+	"name": "Fast interaction",
+	"description": "Быстрое Взаимодействие",
+	"author": "fm.venom",
+	"contact": "https://steamcommunity.com/id/fm-venom/",
+    "blt_version" : 2.0,
+    "version" : "4",
+	"hooks": [
+          {"hook_id": "lib/units/interactions/interactionext", "script_path": "Fast interaction.lua" }
+	]
+}

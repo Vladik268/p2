@@ -1,0 +1,29 @@
+{
+    "menu_id": "ehi_buffs_perks_grinder_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_grinder",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_grinder_regen_duration_choice",
+            "title": "ehi_buffs_perks_grinder_regen_duration",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "grinder", "regen_duration" ],
+            "value": "regen_duration",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_grinder_stack_cooldown_choice",
+            "title": "ehi_buffs_perks_grinder_stack_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "grinder", "stack_cooldown" ],
+            "value": "stack_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

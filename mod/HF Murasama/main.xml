@@ -1,0 +1,37 @@
+<table name="HF Murasama">
+
+    <Localization directory="Loc" default="english.txt"/>
+    <GlobalValue id="murasama" color="Color(1, 0.1, 0.1)"/>
+    <Melee id="murasama" info_id="bm_melee_murasama_info" based_on="sandsteel" unlock_level="0" unit="units/mods/weapons/wpn_mel_murasama/wpn_fps_mel_murasama" third_unit="units/mods/weapons/wpn_mel_murasama/wpn_third_mel_murasama" texture_bundle_folder="mods" dlc="murasama" global_value="murasama" force_use="true" deflect="true" dismember="true">
+		<stats min_damage="74" max_damage="82" charge_time="0.2" min_damage_effect="1" max_damage_effect="1" range="350" concealment="29"/>
+	</Melee>
+    <AddFiles directory="Assets">
+		
+		<!-- files -->
+		
+		<unit_mat path="units/mods/weapons/wpn_mel_murasama/wpn_fps_mel_murasama"/>
+		<unit_mat path="units/mods/weapons/wpn_mel_murasama/wpn_third_mel_murasama"/>
+
+		
+		<!-- icon -->
+		
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/murasama"/>
+		
+		
+        <df_nm path="units/mods/weapons/wpn_mel_murasama/textures/blade"/>
+		<texture path="units/mods/weapons/wpn_mel_murasama/textures/blade_il"/>
+		
+		<!-- effects -->
+		
+		<effect path="effects/payday2/particles/character/murasama" load="true"/>
+		<effect path="effects/payday2/particles/character/murasama_extra" load="true"/>
+		<effect path="effects/payday2/particles/character/parts/murasama_third" load="true"/>
+		
+		
+    </AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="playerdamage.lua" source_file="lib/units/beings/player/playerdamage"/>
+		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/>
+		<hook file="copdamage.lua" source_file="lib/units/enemies/cop/copdamage"/>
+	</Hooks>
+</table>

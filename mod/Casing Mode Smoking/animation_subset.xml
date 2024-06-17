@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		<target mode="attach">
+			<anim name="smoking_enter"	file="anims/fps/smoking/smoking_enter"	blend_set="all"/>
+			<anim name="smoking_exit"	file="anims/fps/smoking/smoking_exit"	blend_set="all"/>
+			<anim name="smoking_idle"	file="anims/fps/smoking/smoking_idle"	blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

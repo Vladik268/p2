@@ -1,0 +1,33 @@
+{
+	"name":"Escape Confirmer",
+	"description":"Blocks the escape until you confirm it",
+	"author":"marijn211",
+	"contact":"marijn211@hotmail.com",
+	"version":"1.5",
+	"color": "255 255 255",
+	"blt_version": 2,
+	"image" : "escapeconfirmer.png",
+	"hooks" :
+	[
+		{	"hook_id":"lib/managers/mission/elementmissionend",
+		 	"script_path":"elementmissionend.lua"
+		},
+		{ 	"hook_id" : "lib/managers/menumanager",
+			"script_path" :"elementmissionend.lua" 
+		},
+		{	"hook_id":"lib/managers/chatmanager",
+		 	"script_path":"elementmissionend.lua"
+		}
+	],
+"keybinds" : [
+	{
+		"keybind_id" : "allowescapebutton",
+		"name" : "Allow Escape",
+		"description" : "Press once to allow escaping.",
+		"script_path" : "enableescape.lua",
+		"run_in_menu" : false,
+		"run_in_game" : true,
+		"localized" : false
+	}
+]
+}

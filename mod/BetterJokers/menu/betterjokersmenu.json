@@ -1,0 +1,64 @@
+{
+	"menu_id": "betterjokersmenu",
+	"parent_menu_id": "blt_options",
+	"title": "bj_title",
+	"description": "bj_desc",
+	"back_callback": "bjsave",
+	"items":
+	[
+		{
+			"type" : "toggle",
+			"id" : "bj_joker_exclusive_access",
+			"title" : "bj_joker_exclusive_access",
+			"description" : "bj_joker_exclusive_access_desc",
+			"callback" : "bj_joker_exclusive_access",
+			"value" : "bj_joker_exclusive_access",
+			"default_value" : false
+		},
+		{
+			"type" : "toggle",
+			"id" : "bj_joker_my_contours",
+			"title" : "bj_joker_my_contours",
+			"description" : "bj_joker_my_contours_desc",
+			"callback" : "bj_joker_my_contours",
+			"value" : "bj_joker_my_contours",
+			"default_value" : true
+		},
+		{
+			"type" : "toggle",
+			"id" : "bj_joker_other_contours",
+			"title" : "bj_joker_other_contours",
+			"description" : "bj_joker_other_contours_desc",
+			"callback" : "bj_joker_other_contours",
+			"value" : "bj_joker_other_contours",
+			"default_value" : true
+		},
+		{
+			"type" : "toggle",
+			"id" : "bjcwp_show_other_waypoints",
+			"title" : "bjcwp_show_other_waypoints",
+			"description" : "bjcwp_show_other_waypoints_desc",
+			"callback" : "bjcwp_show_other_waypoints",
+			"value" : "bjcwp_show_other_waypoints",
+			"default_value" : true
+		},
+		{
+			"type" : "toggle",
+			"id" : "bj_joker_show_health",
+			"title" : "bj_joker_show_health",
+			"description" : "bj_joker_show_health_desc",
+			"callback" : "bj_joker_show_health",
+			"value" : "bj_joker_show_health",
+			"default_value" : true
+		},
+		{
+			"type" : "toggle",
+			"id" : "bj_disable_incompatibility_warnings",
+			"title" : "bj_disable_incompatibility_warnings",
+			"description" : "bj_disable_incompatibility_warnings_desc",
+			"callback" : "bj_disable_incompatibility_warnings",
+			"value" : "bj_disable_incompatibility_warnings",
+			"default_value" : false
+		}
+	]
+}

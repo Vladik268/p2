@@ -1,0 +1,28 @@
+<mod name="Casing Mode Smoking" author="Cpone" color="Color(0.6, 0.9, 0.1)">
+	<AssetUpdates id="42069" version="1.0.2" provider="modworkshop"/>
+
+	<Hooks directory="hooks">
+		<hook file="playermaskoff.lua" source_file="lib/units/beings/player/states/playermaskoff"/>
+		<hook file="fpcameraplayerbase.lua" source_file="lib/units/cameras/fpcameraplayerbase"/>
+	</Hooks>
+
+	<Sounds directory="sounds">
+		<prefixes>
+			<value_node value="first"/>
+			<value_node value="third"/>
+		</prefixes>
+
+		<sound id="smoking_lighter_sound" path="smoking_lighter_sound.ogg"/>
+	</Sounds>
+
+	<AddFiles directory="assets">
+		<animation path="anims/fps/smoking/smoking_enter"/>
+		<animation path="anims/fps/smoking/smoking_exit"/>
+		<animation path="anims/fps/smoking/smoking_idle"/>
+
+		<material_config path="units/pd2_mod_smoking/props/cigarette/cigarette"/>
+		<model path="units/pd2_mod_smoking/props/cigarette/cigarette"/>
+		<object path="units/pd2_mod_smoking/props/cigarette/cigarette"/>
+		<unit path="units/pd2_mod_smoking/props/cigarette/cigarette"/>
+	</AddFiles>
+</mod>

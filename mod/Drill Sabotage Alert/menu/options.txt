@@ -1,0 +1,27 @@
+{
+	"menu_id" : "FOOMD_menu",
+	"parent_menu_id" : "blt_options",
+	"title" : "FOOMD_title",
+	"description":"FOOMD_desc",
+	"back_callback" : "FOOMD_closed",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "FOOMD_Predict_Attempt",
+			"title" : "FOOMD_Predict_Attempt_title",
+			"description" : "FOOMD_Predict_Attempt_desc",
+			"callback" : "FOOMD_change_Predict_Attempt",
+			"value" : "Predict_Attempt",
+			"default_value" : true
+		},
+		{
+			"type" : "toggle",
+			"id" : "FOOMD_waypoint",
+			"title" : "FOOMD_waypoint_title",
+			"description" : "FOOMD_waypoint_desc",
+			"callback" : "callback_FOOMD_waypoint",
+			"value" : "waypoint",
+			"default_value" : true
+		}
+	]
+}

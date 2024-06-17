@@ -1,0 +1,21 @@
+{
+    "name" : "PD2 Secret Riddles In Chat",
+    "description" : "Prints a system chat with all Payday 2 secret riddle answers via keybind.",
+    "author" : "Berk_Rider",
+    "contact" : "Berk_Rider",
+    "version" : "1.0",
+
+	"keybinds" : [
+				{
+            "keybind_id" : "secret",
+            "name" : "The Payday 2 Secret",
+            "description" : "Gives all Payday 2 secret riddles.",
+            "script_path" : "secret.lua",
+            "run_in_menu" : false,
+            "run_in_game" : true,
+			"localized" : false
+	}
+    ]
+}
+
+

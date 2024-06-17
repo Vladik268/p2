@@ -1,0 +1,26 @@
+local text_original = LocalizationManager.text
+function LocalizationManager:text(string_id, ...)
+return string_id == "menu_st_spec_0" and "Blank Deck"
+or string_id == "menu_st_spec_0_desc" and "This deck has no benefits at all."
+or string_id == "menu_deck0_1" and ""
+or string_id == "menu_deck0_1_desc" and ""
+or string_id == "menu_deck0_2" and ""
+or string_id == "menu_deck0_2_desc" and ""
+or string_id == "menu_deck0_3" and ""
+or string_id == "menu_deck0_3_desc" and ""
+or string_id == "menu_deck0_4" and ""
+or string_id == "menu_deck0_4_desc" and ""
+or string_id == "menu_deck0_5" and ""
+or string_id == "menu_deck0_5_desc" and ""
+or string_id == "menu_deck0_6" and ""
+or string_id == "menu_deck0_6_desc" and ""
+or string_id == "menu_deck0_7" and ""
+or string_id == "menu_deck0_7_desc" and  ""
+or string_id == "menu_deck0_8" and ""
+or string_id == "menu_deck0_8_desc" and  ""
+or string_id == "menu_deck0_9" and ""
+or string_id == "menu_deck0_9_desc" and  ""
+or string_id == "menu_st_spec_00" and "Wildcard Deck"
+or string_id == "menu_st_spec_00_desc" and  "This deck only has the shared skills."
+or text_original(self, string_id, ...)
+end

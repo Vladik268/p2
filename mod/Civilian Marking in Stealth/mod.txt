@@ -1,0 +1,15 @@
+{
+    "name" : "Civilian Marking in Stealth",
+    "description" : "Allows players to mark civilians in stealth if they have the basic Chameleon skill.",
+	"author" : "Maelform, LazyOzzy, Sirgoodsmoke",
+	"hooks" : [
+    {   
+        "hook_id" : "lib/units/beings/player/states/playerstandard",
+        "script_path" : "markciv.lua"
+    },
+    {   
+        "hook_id" : "lib/tweak_data/charactertweakdata",
+        "script_path" : "markciv.lua"
+    }
+	]
+}

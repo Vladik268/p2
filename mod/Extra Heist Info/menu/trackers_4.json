@@ -1,0 +1,72 @@
+{
+    "menu_id": "ehi_trackers_4_menu",
+    "parent_menu" : "ehi_trackers_3_menu",
+    "title": "ehi_trackers_menu",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_show_escape_chance_choice",
+            "title": "ehi_show_escape_chance",
+            "description": "ehi_show_escape_chance_desc",
+            "callback": ["SetOption", "UpdateTrackerVisibility"],
+            "callback_arguments": "show_escape_chance",
+            "focus_changed_callback": "SetFocus",
+            "value": "show_escape_chance",
+            "default_value": true,
+            "ehi_ver" : 84
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_sniper_tracker_choice",
+            "title": "ehi_show_sniper_tracker",
+            "description": "ehi_show_sniper_tracker_desc",
+            "callback": ["SetOption", "UpdateTrackerVisibility"],
+            "callback_arguments": "show_sniper_tracker",
+            "focus_changed_callback": "SetFocus",
+            "value": "show_sniper_tracker",
+            "default_value": true,
+            "is_parent" :  true,
+            "ehi_ver" : 168
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_sniper_spawned_popup_choice",
+            "title": "ehi_show_sniper_spawned_popup",
+            "description": "ehi_show_sniper_spawned_popup_desc",
+            "callback": "SetOption",
+            "callback_arguments": "show_sniper_spawned_popup",
+            "value": "show_sniper_spawned_popup",
+            "default_value": true,
+            "parent" : "ehi_show_sniper_spawned_popup_choice",
+            "ehi_ver" : 206
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_sniper_logic_start_popup_choice",
+            "title": "ehi_show_sniper_logic_start_popup",
+            "description": "ehi_show_sniper_logic_start_popup_desc",
+            "callback": "SetOption",
+            "callback_arguments": "show_sniper_logic_start_popup",
+            "value": "show_sniper_logic_start_popup",
+            "default_value": true,
+            "parent" : "ehi_show_sniper_spawned_popup_choice",
+            "ehi_ver" : 239
+        },
+        {
+            "type": "toggle",
+            "id": "show_sniper_logic_end_popup_choice",
+            "title": "ehi_show_sniper_logic_end_popup",
+            "description": "show_sniper_logic_end_popup_desc",
+            "callback": "SetOption",
+            "callback_arguments": "show_sniper_logic_end_popup",
+            "value": "show_sniper_logic_end_popup",
+            "default_value": true,
+            "parent" : "ehi_show_sniper_spawned_popup_choice",
+            "ehi_ver" : 239
+        }
+    ]
+}

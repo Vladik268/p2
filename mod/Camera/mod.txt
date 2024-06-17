@@ -1,0 +1,21 @@
+{
+	"name": "Camera",
+	"description": "Долгое зацикливание камеры",
+	"author": "fm.venom",
+	"contact": "https://steamcommunity.com/id/fm-venom/",
+    "blt_version" : 2.0,
+    "version" : "4", 
+    "keybinds" : 
+	[
+		
+		{
+			"keybind_id" : "Camera",
+			"name" : "Camera",
+			"description" : "Долгое зацикливание камеры",
+			"script_path" : "code.lua",
+			"run_in_menu" : true,
+			"run_in_game" : true,
+			"localized": false
+		}
+	]
+}

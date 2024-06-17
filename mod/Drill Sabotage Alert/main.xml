@@ -1,0 +1,7 @@
+<mod name="Drill Sabotage Alert" author="Freyah" color="Color(0,0,0)">
+	<AssetUpdates id="46815" version="1.01b" provider="modworkshop"/>
+
+    <Localization directory="loc" default="english.json">
+		  <Localization language="english" file="english.json"/>
+    </Localization>
+</mod>

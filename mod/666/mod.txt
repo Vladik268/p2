@@ -1,0 +1,13 @@
+{
+	"name" : "ML",
+	"description" : " ",
+	"author" : "",
+	"version" : "2.0",
+	"blt_version" : 2.0,
+	"hooks": [
+		{
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "menumanager.lua"
+		}
+	]
+}

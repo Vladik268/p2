@@ -1,0 +1,9 @@
+{
+    "hint_FOOMD" : "DRILL SABOTAGE ATTEMPT!",
+    "FOOMD_title" : "Drill Sabotage Alert",
+    "FOOMD_desc" : "",
+    "FOOMD_Predict_Attempt_title" : "Predict attempts to jam a drill",
+    "FOOMD_Predict_Attempt_desc" : "Allows to predict when an enemy will try to jam a drill (it is not guaranteed they will)\nIf disabled, it will only alert you when they are already breaking it",
+    "FOOMD_waypoint_title" : "Make waypoint",
+    "FOOMD_waypoint_desc" : "Adds waypoint onto drill that is being sabotaged"
+}

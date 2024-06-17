@@ -1,0 +1,106 @@
+<mod name="The Overhaul" author="Mx#6478" color="Color(1,0.1,0.01)" priority="1">
+	<AssetUpdates id="32222" version="20.1" provider="modworkshop" />
+	<Localization directory="locale" default="locale.json">
+	</Localization>
+	<Hooks directory="Hooks">
+		<hooks directory="utils">
+			<hook file="utils.lua" source_file="lib/entry"/>
+		</hooks>
+		<hooks directory="perk_throwables">
+			<hook file="skilltreetweakdata.lua" source_file="lib/tweak_data/skilltreetweakdata" />
+			<hook file="upgradestweakdata.lua" source_file="lib/tweak_data/upgradestweakdata" />
+			<hook file="projectilestweakdata.lua" source_file="lib/tweak_data/blackmarkettweakdata" />
+			<hook file="playermanager.lua" source_file="lib/managers/playermanager" />
+			<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard" />
+			<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager" />
+			<hook file="clientnetworksession.lua" source_file="lib/network/base/clientnetworksession" />
+			<hook file="networkpeer.lua" source_file="lib/network/base/networkpeer" />
+			<hook file="unitnetworkhandler.lua" source_file="lib/network/handlers/unitnetworkhandler" />
+			<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata" />
+			<hook file="playerdamage.lua" source_file="lib/units/beings/player/playerdamage" />
+			<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase" />
+			<hook file="interactionext.lua" source_file="lib/units/interactions/interactionext" />
+			<hook file="tripminebase.lua" source_file="lib/units/weapons/trip_mine/tripminebase" />
+			<hook file="playerequipment.lua" source_file="lib/units/beings/player/playerequipment" />
+			<hook file="hudmanagerpd2.lua" source_file="lib/managers/hudmanagerpd2"/>
+			<hook file="mx_grenade.lua" source_file="lib/units/weapons/grenades/fraggrenade"/>
+		</hooks>
+		<hooks directory="skilltree_addon">
+			<hooks directory="SkillFramework">
+				<hook file="infamynewtweakdata.lua" source_file="lib/tweak_data/infamynewtweakdata"/>
+				<hook file="playermanager.lua" source_file="lib/managers/playermanager"/>
+				<hook file="skilltreeguinew.lua" source_file="lib/managers/menu/skilltreeguinew"/>
+				<hook file="skilltreemanager.lua" source_file="lib/managers/skilltreemanager"/>
+				<hook file="skilltreetweakdata.lua" source_file="lib/tweak_data/skilltreetweakdata"/>
+				<hook file="upgradestweakdata.lua" source_file="lib/tweak_data/upgradestweakdata"/>
+				<hook file="charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>
+				<hook file="copdamage.lua" source_file="lib/units/enemies/cop/copdamage"/>
+			</hooks>
+			<hooks directory="pyromancer">
+				<hook file="skilltreetweakdata.lua" source_file="lib/tweak_data/skilltreetweakdata"/>
+				<hook file="upgradestweakdata.lua" source_file="lib/tweak_data/upgradestweakdata"/>
+				<hook file="newflamethrowerbase.lua" source_file="lib/units/weapons/newflamethrowerbase"/>
+				<hook file="flamethrowereffectextension.lua" source_file="lib/units/weapons/flamethrowereffectextension"/>
+				<hook file="inventorydescription.lua" source_file="lib/utils/inventorydescription"/>
+				<hook file="raycastweaponbase.lua" source_file="lib/units/weapons/raycastweaponbase"/>
+				<hook file="playermanager.lua" source_file="lib/managers/playermanager"/>
+			</hooks>
+			<hooks directory="oppressor">
+				<hook file="skilltreetweakdata.lua" source_file="lib/tweak_data/skilltreetweakdata"/>
+				<hook file="upgradestweakdata.lua" source_file="lib/tweak_data/upgradestweakdata"/>
+			</hooks>
+			<hooks directory="demoliton_expert">
+				<hook file="copdamage.lua" source_file="lib/units/enemies/cop/copdamage"/>
+				<hook file="fraggrenade.lua" source_file="lib/units/weapons/grenades/fraggrenade"/>
+				<hook file="grenadelauncherbase.lua" source_file="lib/units/weapons/grenadelauncherbase"/>
+				<hook file="playerdamage.lua" source_file="lib/units/beings/player/playerdamage"/>
+				<hook file="skilltreetweakdata.lua" source_file="lib/tweak_data/skilltreetweakdata"/>
+				<hook file="upgradestweakdata.lua" source_file="lib/tweak_data/upgradestweakdata"/>
+			</hooks>
+			<hooks directory="butcher">
+				<hook file="skilltreetweakdata.lua" source_file="lib/tweak_data/skilltreetweakdata"/>
+				<hook file="upgradestweakdata.lua" source_file="lib/tweak_data/upgradestweakdata"/>
+				<hook file="playermanager.lua" source_file="lib/managers/playermanager"/>
+				<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/>
+				<hook file="playerdamage.lua" source_file="lib/units/beings/player/playerdamage"/>
+			</hooks>
+		</hooks>
+		<hooks directory="addon_perks">
+			<hook file="skilltreetweakdata.lua" source_file="lib/tweak_data/skilltreetweakdata"/>
+			<hook file="upgradestweakdata.lua" source_file="lib/tweak_data/upgradestweakdata"/>
+			<hook file="playermanager.lua" source_file="lib/managers/playermanager"/>
+			<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/>
+			<hook file="raycastweaponbase.lua" source_file="lib/units/weapons/raycastweaponbase"/>
+			<hook file="shotgunbase.lua" source_file="lib/units/weapons/shotgun/shotgunbase"/>
+			<hook file="hudteammate.lua" source_file="lib/managers/hud/hudteammate"/>
+			<hook file="hudmanager.lua" source_file="lib/managers/hudmanager"/>
+			<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/>			
+		</hooks>
+	</Hooks>
+	<AddFiles directory="Assets">
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/yakuza_injector" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/burglar_luck" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/med_x" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/auto_inject_super_stimpak" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/adrenaline_shot" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/spare_armor_plate" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/liquid_armor" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/blood_transfusion" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/wick_mode" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/emergency_requisition" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/the_mixtape" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/throwable_trip_mine" />
+		<unit path="units/payday2/equipment/gen_equipment_tripmine/gen_equipment_tripmine_mx" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/jet" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/whiff" />
+		<texture path="guis/textures/full_screen_effect_1" />
+		<texture path="guis/dlcs/addon_perks_striker/textures/pd2/specialization/icons_atlas" force="true"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/lonestar_rage" />
+		<texture path="guis/dlcs/addon_perks_lonestar/textures/pd2/specialization/icons_atlas" force="true"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/crooks_con" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/crew_synchrony" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/grenades/buff_banner" />
+		<unit path="units/mx_throwables/throwable_trip_mine" />
+		<texture path="guis/dlcs/addon_perks_redacted/textures/pd2/specialization/icons_atlas" force="true"/>
+	</AddFiles>
+</mod>

@@ -1,0 +1,10 @@
+{
+	"name": "Mark all enemies",
+	"description": "Mark all enemies",
+	"author": "Psyhowithdrill",
+	"contact": "",
+  	"image": "",
+	"hooks": [
+       		{"hook_id": "lib/tweak_data/charactertweakdata",  "script_path": "charactertweakdata.lua"}
+	]
+}

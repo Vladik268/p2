@@ -1,0 +1,18 @@
+{
+    "name": "Drill Sabotage Alert",
+    "description": "Alerts you when some fucker tries to jam your drill",
+    "author": "Freyah",
+    "version": "1.01b",
+    "color" : "0 0 0",
+    "contact" : "Discord: freyah_",
+    "hooks" : [
+		{
+			"hook_id" : "lib/units/props/drill",
+			"script_path" : "grill.lua"
+		},
+        {
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "menu.lua"
+		}
+    ]
+}

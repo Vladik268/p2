@@ -1,0 +1,13 @@
+{
+	"name" : "Detailed Carry Info",
+	"description" : "Bags that you carry are more detailed?",
+	"author" : "Undeadsewer",
+	"contact" : "undeadsewer@gmail.com",
+	"version" : "1",
+	"hooks" : [
+		{ "hook_id" : "lib/managers/hud/hudtemp", "script_path" : "lib/managers/hud/hudtemp.lua" }
+	],
+	"updates" : [
+		{ "revision" : 1, "identifier" : "DetailedCarryInfo" }
+	],
+}

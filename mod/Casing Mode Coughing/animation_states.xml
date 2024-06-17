@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+
+		<target mode="attach">
+			<to name="elevator_cough"			redirect="fps/elevator/cough"/>
+			<to name="elevator_watch_enter"		redirect="fps/elevator/watch_enter"/>
+			<to name="elevator_watch_exit"		redirect="fps/elevator/watch_exit"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+
+		<target mode="append">
+			<state name="fps/elevator" type="template_state" segment="base" speed="1.0">
+				<keys>
+					<key at="enter" callback="hide_weapon" class_name="base"/>
+					<key at="exit" callback="show_weapon" class_name="base"/>
+				</keys>
+			</state>
+
+			<state name="fps/elevator/empty" type="emptyloop" segment="base" speed="1.0"/>
+
+			<!-- Cough -->
+				<state name="fps/elevator/cough" type="once" segment="base" speed="1.0">
+					<anim name="elevator_cough"/>
+
+					<keys>
+						<key at="enter" callback="play_sound" class_name="base" param1="wp_elevator_cough"/>
+						<key at="6" callback="clbk_cough_shake" class_name="base"/>
+						<key at="21" callback="clbk_cough_shake" class_name="base"/>
+					</keys>
+
+					<exit name="fps/elevator/empty"/>
+				</state>
+
+			<!-- Slap -->
+				<state name="fps/elevator/slap" type="once" segment="base" speed="1.0">
+					<anim name="elevator_slap"/>
+
+					<exit name="fps/equip"/>
+				</state>
+
+			<!-- Watch -->
+				<state name="fps/elevator/watch_enter" type="once" segment="base" speed="1.0">
+					<anim name="elevator_watch_enter"/>
+
+					<exit name="fps/interaction/ecm_idle"/>
+				</state>
+
+				<state name="fps/elevator/watch_idle" type="loop" segment="base" speed="1.0">
+					<from_group name="fps/elevator/watch_enter" blend="1"/>
+
+					<anim name="elevator_watch_idle"/>
+				</state>
+
+				<state name="fps/elevator/watch_exit" type="once" segment="base" speed="1.0">
+					<from_group name="fps/elevator/watch_idle" blend="1"/>
+
+					<anim name="elevator_watch_exit"/>
+
+					<exit name="fps/elevator/empty"/>
+				</state>
+		</target>
+	</tweak>
+</tweaks>

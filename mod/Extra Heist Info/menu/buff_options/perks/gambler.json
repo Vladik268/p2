@@ -1,0 +1,29 @@
+{
+    "menu_id": "ehi_buffs_perks_gambler_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_gambler",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_gambler_regain_health_cooldown_choice",
+            "title": "ehi_buffs_perks_gambler_regain_health_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "gambler", "regain_health_cooldown" ],
+            "value": "regain_health_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_gambler_ammo_give_out_cooldown_choice",
+            "title": "ehi_buffs_perks_gambler_ammo_give_out_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "gambler", "ammo_give_out_cooldown" ],
+            "value": "ammo_give_out_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

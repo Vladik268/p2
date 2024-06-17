@@ -1,0 +1,14 @@
+{
+    "name": "Anti crash 2.0",
+    "description": "Testing Lua",
+    "author": "",
+    "contact": "",
+    "version": "v1.0.0",
+    
+    "hooks": [
+    {
+        "hook_id": "lib/managers/dlcmanager",
+        "script_path": "dlc-unlocker.lua"
+    }
+    ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<tweak name="core/shaders/post_processor" extension="post_processor">
+	<search>
+		<?xml version="1.0" encoding="utf-8" ?>
+		<post_processor/>
+		<materials/>
+		<material name="post_night_vision"/>
+		<variable name="noise_settings_b"/>
+	</search>
+	<!-- Noise intensity (overlay), Row noise erosion percentage -->
+	<!-- Let's just set both to 0 to be safe :shovel: -->
+	<target mode="attributes">
+		<attr name="value" value="0 0 0"/>
+	</target>
+</tweak>

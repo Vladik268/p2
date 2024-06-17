@@ -1,0 +1,22 @@
+{
+	"name" : "Infamy in lobby",
+	"description" : "Now you can open infamy menu in session, Also no need to break lobby anymore.",
+	"author" : "Shane",
+	"Contact" : "https://steamcommunity.com/id/Shane1230/",
+	"version" : "1.2",
+	"priority": 1,
+	"hooks": [
+			{ 
+			"hook_id" : "lib/managers/menu/playerinventorygui",
+			"script_path" : "infamy.lua"
+			}
+	],
+	"updates": [
+        		{
+			"identifier": "iil",
+			"host": {
+			"meta": "https://raw.githubusercontent.com/Shane1230/autoupdate/main/IIL"
+	 		}
+		}
+	]
+}

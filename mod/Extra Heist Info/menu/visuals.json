@@ -1,0 +1,88 @@
+{
+    "menu_id": "ehi_visuals_menu",
+    "parent_menu": "ehi_menu",
+    "title": "ehi_visuals_menu",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_show_tracker_bg_choice",
+            "title": "ehi_show_tracker_bg",
+            "description": "ehi_show_tracker_bg_desc",
+            "callback": ["SetOption", "UpdateBGVisibility"],
+            "callback_arguments": "show_tracker_bg",
+            "value": "show_tracker_bg",
+            "is_parent" : true,
+            "default_value": true,
+            "ehi_ver" : 6
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_tracker_corners_choice",
+            "title": "ehi_show_tracker_corners",
+            "description": "ehi_show_tracker_corners_desc",
+            "callback": ["SetOption", "UpdateCornerVisibility"],
+            "callback_arguments": "show_tracker_corners",
+            "parent": "ehi_show_tracker_bg_choice",
+            "value": "show_tracker_corners",
+            "default_value": true,
+            "ehi_ver" : 78
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_one_icon_choice",
+            "title": "ehi_show_one_icon",
+            "description": "ehi_show_one_icon_desc",
+            "callback": ["SetOption", "UpdateIconsVisibility"],
+            "callback_arguments": "show_one_icon",
+            "value": "show_one_icon",
+            "default_value": false,
+            "ehi_ver" : 6
+        },
+        {
+            "type": "multiple_choice",
+            "id": "ehi_show_icon_position_choice",
+            "title": "ehi_show_icon_position",
+            "description": "ehi_show_icon_position_desc",
+            "callback": ["SetOption", "UpdateIconsPosition"],
+            "callback_arguments": "show_icon_position",
+            "items": [
+                "ehi_show_icon_position_1",
+                "ehi_show_icon_position_2"
+            ],
+            "value": "show_icon_position",
+            "default_value": 2,
+            "ehi_ver" : 237
+        },
+        {
+            "type" : "divider",
+            "size" : 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_show_tracker_hint_choice",
+            "title": "ehi_show_tracker_hint",
+            "description": "ehi_show_tracker_hint_desc",
+            "callback": "SetOption",
+            "callback_arguments": "show_tracker_hint",
+            "value": "show_tracker_hint",
+            "is_parent" : true,
+            "default_value": true,
+            "ehi_ver" : 191
+        },
+        {
+            "type": "slider",
+            "id": "ehi_show_tracker_hint_t_choice",
+            "title": "ehi_show_tracker_hint_t",
+            "description": "ehi_show_tracker_hint_t_desc",
+            "callback": "SetOption",
+            "callback_arguments": "show_tracker_hint_t",
+            "value": "show_tracker_hint_t",
+            "parent" : "ehi_show_tracker_hint_choice",
+            "max": 120,
+            "min": 0,
+            "step": 1,
+            "default_value": 15,
+            "ehi_ver" : 191
+        }
+    ]
+}

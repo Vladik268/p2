@@ -1,0 +1,9 @@
+<materials version="3">
+	<material name="mtr_cigarette" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:SELF_ILLUMINATION" version="2">
+		<diffuse_texture file="units/world/props/cigarette/cigarette_df"/>
+		<self_illumination_texture file="units/world/props/cigarette/cigarette_il"/>
+
+		<variable value="0" type="scalar" name="specular_power"/>
+		<variable value="neonsign" type="scalar" name="il_multiplier"/>
+	</material>
+</materials>

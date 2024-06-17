@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="13">
+	<object file="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_hur" />
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_weapon_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="base" class="MxGrenade" >
+			<var name="_tweak_projectile_entry" value="wpn_prj_hur" />
+		</extension>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" >
+			<var name="_skip_give_body_collision_damage" value="true" />
+		</extension>
+		<extension name="pickup" class="AmmoClip" >
+			<var name="_projectile_id" value="wpn_prj_hur" />
+			<var name="_ammo_count" value="1" />
+			<var name="_pickup_event" value="wp_hur_pick_up" />
+		</extension>
+		<extension name="contour" class="ContourExt" />
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_wpn_prj_hur" />
+		<soundsource name="snd" source="rp_wpn_prj_hur" />
+	</sounds>
+</unit>

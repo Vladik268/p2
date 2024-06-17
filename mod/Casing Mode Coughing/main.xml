@@ -1,0 +1,57 @@
+<mod name="Casing Mode Coughing" author="Cpone" color="Color(0.6, 0.9, 0.1)">
+	<AssetUpdates id="32384" version="1.0.2" provider="modworkshop"/>
+
+	<Hooks directory="hooks">
+		<hook file="playermaskoff.lua" source_file="lib/units/beings/player/states/playermaskoff"/>
+		<hook file="fpcameraplayerbase.lua" source_file="lib/units/cameras/fpcameraplayerbase"/>
+	</Hooks>
+
+	<Sounds directory="sounds">
+		<prefixes>
+			<value_node value="first"/>
+			<value_node value="third"/>
+		</prefixes>
+
+		<sound id="cough1" path="cough1.ogg"/>
+		<sound id="cough2" path="cough2.ogg"/>
+		<sound id="cough3" path="cough3.ogg"/>
+		<sound id="cough4" path="cough4.ogg"/>
+
+		<random id="wp_elevator_cough">
+			<sound id="cough1"/>
+			<sound id="cough2"/>
+			<sound id="cough3"/>
+			<sound id="cough4"/>
+		</random>
+
+		<!-- <sound id="slap_hit01" path="slap_hit01.ogg"/>
+		<sound id="slap_hit02" path="slap_hit02.ogg"/>
+		<sound id="slap_hit03" path="slap_hit03.ogg"/>
+		<sound id="slap_hit04" path="slap_hit04.ogg"/>
+		<sound id="slap_hit05" path="slap_hit05.ogg"/>
+		<sound id="slap_hit06" path="slap_hit06.ogg"/>
+		<sound id="slap_hit07" path="slap_hit07.ogg"/>
+		<sound id="slap_hit08" path="slap_hit08.ogg"/>
+		<sound id="slap_hit09" path="slap_hit09.ogg"/>
+
+		<random id="wp_elevator_slap">
+			<sound id="slap_hit01"/>
+			<sound id="slap_hit02"/>
+			<sound id="slap_hit03"/>
+			<sound id="slap_hit04"/>
+			<sound id="slap_hit05"/>
+			<sound id="slap_hit06"/>
+			<sound id="slap_hit07"/>
+			<sound id="slap_hit08"/>
+			<sound id="slap_hit09"/>
+		</random> -->
+	</Sounds>
+
+	<AddFiles directory="assets">
+		<animation path="anims/fps/elevator/cough"/>
+		<animation path="anims/fps/elevator/slap"/>
+		<animation path="anims/fps/elevator/watch_enter"/>
+		<animation path="anims/fps/elevator/watch_exit"/>
+		<animation path="anims/fps/elevator/watch_idle"/>
+	</AddFiles>
+</mod>

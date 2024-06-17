@@ -1,0 +1,6 @@
+{
+	"name": "Disable Night Vision Noise Overlay",
+	"description": "No, not the audio noise.",
+	"author": "Zdann",
+	"blt_version" : 2.0
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Pause Menu",
+	"description": "While you alone in the session, you can pause the game until someone join to your lobby, just like in the offline game. Restart button also switches to offline version.",
+	"author": "James",
+	"version": "1",
+	"hooks": [
+		{"hook_id": "lib/managers/menumanager",	"script_path": "pause.lua"}
+	],
+	"updates" : [
+		{
+			"identifier" : "pause",
+			"host": {
+				"meta": "https://raw.githubusercontent.com/Jamemes/Pause-Menu/meta/meta.json"
+			}
+		}
+	]
+}

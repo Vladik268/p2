@@ -1,0 +1,14 @@
+{
+	"name": "Enter Vehicle While Carrying Loot",
+	"description": "Allows the player to enter vehicles while carrying loot.",
+	"author": "Berk_Rider",
+	"contact": "https://modworkshop.net/user/28908 (don't expect a quick answer)",
+	"version": "1.0",
+	"priority": 10,
+	"hooks": [
+		{
+			"hook_id": "lib/units/interactions/interactionext",
+			"script_path": "driveandcarry.lua"
+		}
+	]
+}

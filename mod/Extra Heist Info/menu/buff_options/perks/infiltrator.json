@@ -1,0 +1,18 @@
+{
+    "menu_id": "ehi_buffs_perks_infiltrator_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_infiltrator",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_infiltrator_melee_cooldown_choice",
+            "title": "ehi_buffs_perks_infiltrator_melee_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "infiltrator", "melee_cooldown" ],
+            "value": "melee_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

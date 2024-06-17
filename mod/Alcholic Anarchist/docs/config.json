@@ -1,0 +1,157 @@
+{
+  "localedir": "https://raw.githubusercontent.com/mxswat/pd2-mx-the-overhaul/main/locale/locale.json",
+  "trees": [
+    {
+      "name": "butcher",
+      "type": "skilltree",
+      "skilltiers": [
+        [
+          {
+            "name": "predator_deflect",
+            "desc": "predator_deflect_desc"
+          }
+        ],
+        [
+          {
+            "name": "counter_strike_plus",
+            "desc": "counter_strike_plus_desc"
+          },
+          {
+            "name": "adrenaline",
+            "desc": "adrenaline_desc"
+          }
+        ],
+        [
+          {
+            "name": "pumping_iron_plus",
+            "desc": "pumping_iron_plus_desc"
+          },
+          {
+            "name": "predator_thirst",
+            "desc": "predator_thirst_desc"
+          }
+        ],
+        [
+          {
+            "name": "martial_arts_plus",
+            "desc": "martial_arts_plus_desc"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Demolition Expert",
+      "type": "skilltree",
+      "skilltiers": [
+        [
+          {
+            "name": "primer_round",
+            "desc": "primer_round_desc"
+          }
+        ],
+        [
+          {
+            "name": "good_demoman",
+            "desc": "good_demoman_desc"
+          },
+          {
+            "name": "hard_skin",
+            "desc": "hard_skin_desc"
+          }
+        ],
+        [
+          {
+            "name": "strong_back",
+            "desc": "strong_back_desc"
+          },
+          {
+            "name": "rapid_reload",
+            "desc": "rapid_reload_desc"
+          }
+        ],
+        [
+          {
+            "name": "the_demolitionist_sacrifice",
+            "desc": "the_demolitionist_sacrifice_desc"
+          }
+        ]        
+      ]
+    },
+    {
+      "name": "Oppressor",
+      "type": "skilltree",
+      "skilltiers": [
+        [
+          {
+            "name": "opp_conc_dmg",
+            "desc": "opp_conc_dmg_desc"
+          }
+        ],
+        [
+          {
+            "name": "opp_damage",
+            "desc": "opp_damage_desc"
+          },
+          {
+            "name": "opp_ammo",
+            "desc": "opp_ammo_desc"
+          }
+        ],
+        [
+          {
+            "name": "opp_rof",
+            "desc": "opp_rof_desc"
+          },
+          {
+            "name": "opp_reload",
+            "desc": "opp_reload_desc"
+          }
+        ],
+        [
+          {
+            "name": "opp_accuracy",
+            "desc": "opp_accuracy_desc"
+          }
+        ]     
+      ]
+    },
+    {
+      "name": "PyroMancer",
+      "type": "skilltree",
+      "skilltiers": [
+        [
+          {
+            "name": "thermal_bomb",
+            "desc": "thermal_bomb_desc"
+          }
+        ],
+        [
+          {
+            "name": "extender",
+            "desc": "extender_desc"
+          },
+          {
+            "name": "flaming_hands",
+            "desc": "flaming_hands_desc"
+          }
+        ],
+        [
+          {
+            "name": "everlasting_flames",
+            "desc": "everlasting_flames_desc"
+          },
+          {
+            "name": "cleansing_fire",
+            "desc": "cleansing_fire_desc"
+          }
+        ],
+        [
+          {
+            "name": "fuel_backpack",
+            "desc": "fuel_backpack_desc"
+          }
+        ]
+      ]
+    }
+  ]
+}

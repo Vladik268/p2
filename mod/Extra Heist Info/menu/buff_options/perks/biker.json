@@ -1,0 +1,31 @@
+{
+    "menu_id": "ehi_buffs_perks_biker_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_biker",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_biker_kill_counter_choice",
+            "title": "ehi_buffs_perks_biker_kill_counter",
+            "description": "ehi_buffs_skills_value",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "biker", "kill_counter" ],
+            "value": "kill_counter",
+            "default_value": true,
+            "is_parent" : true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_biker_kill_counter_persistent_choice",
+            "title": "ehi_buffs_perks_biker_kill_counter_persistent",
+            "description": "ehi_buffs_perks_biker_kill_counter_persistent_desc",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "biker", "kill_counter_persistent" ],
+            "value": "kill_counter_persistent",
+            "default_value": true,
+            "parent" : "ehi_buffs_perks_biker_kill_counter_choice",
+            "ehi_ver" : 204
+        }
+    ]
+}

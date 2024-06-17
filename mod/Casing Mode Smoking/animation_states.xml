@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+
+		<target mode="attach">
+			<to name="smoking_enter"	redirect="fps/smoking/enter"/>
+			<to name="smoking_exit"		redirect="fps/smoking/exit"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+
+		<target mode="append">
+			<state name="fps/smoking" type="template_state" segment="base" speed="1.0">
+				<keys>
+					<key at="enter" callback="hide_weapon" class_name="base"/>
+					<key at="exit" callback="show_weapon" class_name="base"/>
+
+					<key at="enter" callback="anim_clbk_spawn_cigarette" class_name="base"/>
+					<key at="exit" callback="anim_clbk_unspawn_cigarette" class_name="base"/>
+				</keys>
+			</state>
+
+			<state name="fps/smoking/empty" type="emptyloop" segment="base" speed="1.0"/>
+
+			<state name="fps/smoking/enter" type="once" segment="base" speed="1.0">
+				<anim name="smoking_enter"/>
+
+				<keys>
+					<key at="enter" callback="play_sound" class_name="base" param1="smoking_lighter_sound"/>
+				</keys>
+
+				<exit name="fps/smoking/idle"/>
+			</state>
+
+			<state name="fps/smoking/idle" type="loop" segment="base" speed="1.0">
+				<from_group name="fps/smoking/enter" blend="1"/>
+
+				<anim name="smoking_idle"/>
+			</state>
+
+			<state name="fps/smoking/exit" type="once" segment="base" speed="1.0">
+				<from_group name="fps/smoking/idle" blend="1"/>
+
+				<anim name="smoking_exit"/>
+
+				<exit name="fps/smoking/empty"/>
+			</state>
+		</target>
+	</tweak>
+</tweaks>

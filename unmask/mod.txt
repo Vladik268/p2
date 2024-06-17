@@ -1,0 +1,18 @@
+{
+	"name": "unmasking",
+	"description": "This mod allow you to unmask in any heist during stealth mode",
+	"author": "Pertetoes",
+	"contact": "http://steamcommunity.com/id/pertetoes/",
+	"keybinds": [
+	{	
+			"keybind_id" : "un_mask	",
+            "name" : "unmask",
+            "description" : "unmask on keypress"
+            "script_path" : "unmask.lua",
+            "run_in_menu" : false,
+            "run_in_game" : true,
+            "localized" : false
+		}
+	]
+}
+	

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		<target mode="attach">
+			<anim name="elevator_cough"			file="anims/fps/elevator/cough"			blend_set="all"/>
+			<anim name="elevator_slap"			file="anims/fps/elevator/slap"			blend_set="all"/>
+			<anim name="elevator_watch_enter"	file="anims/fps/elevator/watch_enter"	blend_set="all"/>
+			<anim name="elevator_watch_exit"	file="anims/fps/elevator/watch_exit"	blend_set="all"/>
+			<anim name="elevator_watch_idle"	file="anims/fps/elevator/watch_idle"	blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

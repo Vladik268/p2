@@ -1,0 +1,29 @@
+{
+    "menu_id": "ehi_buffs_perks_stoic_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_stoic",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_stoic_dot_choice",
+            "title": "ehi_buffs_perks_stoic_dot",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "stoic", "dot" ],
+            "value": "dot",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_stoic_cooldown_choice",
+            "title": "ehi_buffs_perks_stoic_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "stoic", "cooldown" ],
+            "value": "cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name" : "MX Overhaul",
+    "description" : "Overhauls",
+    "author" : "MX",
+    "contact" : "https://modworkshop.net/mod/32222#description",
+    "priority": 1
+}

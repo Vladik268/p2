@@ -1,0 +1,11 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_smoking/props/cigarette/cigarette" orientation_object="rp_cigarette"/>
+
+	<effects>
+		<effect_spawner name="es_e_smoke" enabled="true" object="e_smoke" effect="effects/particles/character/cigarette_smoke"/>
+	</effects>
+
+	<graphics>
+		<object name="g_cigarette" enabled="true"/>
+	</graphics>
+</dynamic_object>

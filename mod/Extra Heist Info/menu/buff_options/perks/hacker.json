@@ -1,0 +1,55 @@
+{
+    "menu_id": "ehi_buffs_perks_hacker_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_hacker",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_hacker_pecm_cooldown_choice",
+            "title": "ehi_buffs_perks_hacker_pecm_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "hacker", "pecm_cooldown" ],
+            "value": "pecm_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type" : "divider",
+            "size" : 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_hacker_pecm_dodge_choice",
+            "title": "ehi_buffs_perks_hacker_pecm_dodge",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "hacker", "pecm_dodge" ],
+            "value": "pecm_dodge",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_hacker_pecm_jammer_choice",
+            "title": "ehi_buffs_perks_hacker_pecm_jammer",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "hacker", "pecm_jammer" ],
+            "value": "pecm_jammer",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_hacker_pecm_feedback_choice",
+            "title": "ehi_buffs_perks_hacker_pecm_feedback",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "hacker", "pecm_feedback" ],
+            "value": "pecm_feedback",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

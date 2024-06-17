@@ -1,0 +1,7 @@
+{
+    "bm_melee_murasama" : "HF Murasama",
+    "menu_l_global_value_murasama" : "This is a Metal Gear Rising: Revengeance Weapon!",
+    "bm_melee_murasama_info" : "Jetstream Sam's iconic weapon. This sword was passed on from his father.
+
+Allows the ability to deflect bullets. When a charge is held, any bullets that hit you will deflect. Causing the enemy to be stunned temporarily. Renders the blade unable to hold a full charge."
+}

@@ -1,0 +1,109 @@
+<!-- Use `npx http-server` to test in locale how it looks -->
+<DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Mx's The Overhaul: Docs</title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <h1>Mx's The Overhaul</h1>
+    <div id="vapp">
+      <h1> Skill trees: </h1>
+      <div class="skill-tree-container">
+        <skill-tree v-for="tree in trees" :key="tree.butcher" v-bind:tree="tree"></skill-tree>
+      </div>
+    </div>
+    <!-- Our View App goes at the end of the document -->
+    <script>
+      Vue.component('SkillTree', {
+        // using the index and the % to always get the opposite index in the array
+        template: `
+          <div class="skll-tree-container">
+            <h2 class="skill-tree__name"> {{ tree.name }} </h2>
+            <div class="skill-tree">
+              <skill-tier v-for="(skilltier, index) in tree.skilltiers" :key="index" v-bind:tier="(index - tree.skilltiers.length) % (tree.skilltiers.length + 1)" v-bind:skilltier="skilltier"></skill-tier>
+            </div>
+          </div>
+        `,
+        props: ['tree'],
+        methods: {
+          toggleMe() {
+            this.$root.toggleBox()
+          }
+        },
+        created: function () {
+          // console.log(this.tree)
+        }
+      })
+
+      Vue.component('SkillTier', {
+        template: `
+          <div class="skill-tier">
+            <span class="tier-label"> TIER {{ Math.abs(tier) }} </span>
+            <skill v-for="(skill, index) in skilltier" :key="skill.name" v-bind:skill="skill"></skill>
+          </div>
+        `,
+        props: ['skilltier', 'tier'],
+        methods: {},
+        created: function () {
+          // console.log(this.skilltier)
+        }
+      })
+
+      Vue.component('Skill', {
+        template: `
+          <div class="skill">
+            <span class="name"> {{ name }} </span>
+            <span class="desc"v-html="desc"> Desc goes here </span>
+          </div>
+        `,
+        props: ['skill'],
+        data: () => {
+          return {
+            name: '',
+            desc: ''
+          }
+        },
+        methods: {},
+        created: function () {
+          this.name = this.$root.locale[this.skill.name]
+          this.desc = this.$root.locale[this.skill.desc]
+          this.desc = this.desc.replace(/##(.+?)##/g, `<b>$1</b>`)
+          this.desc = this.desc.replace(/\$basic|\$pro/g, ``)
+        }
+      })
+
+      const vueApp = new Vue({
+        el: '#vapp',
+        data: {
+          display: 'redbox',
+          trees: [],
+          locale: {}
+        },
+        methods: {
+          // toggleBox() {
+          //   this.display == 'redbox' ? this.display = 'greenbox' : this.display = 'redbox'
+          // },
+          async fetchLocale(localeUrl) {
+            return fetch(localeUrl).then((response) => response.json())
+          },
+          async fetchConfig() {
+            return fetch('./config.json').then((response) => response.json())
+          },
+        },
+        created: async function () {
+          const config = await this.fetchConfig()
+          this.locale = await this.fetchLocale(config.localedir)
+          this.trees = config.trees
+          console.log(config, this.locale)
+        }
+      })
+    </script>
+  </body>
+
+  </html>

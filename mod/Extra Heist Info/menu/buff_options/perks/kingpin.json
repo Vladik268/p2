@@ -1,0 +1,29 @@
+{
+    "menu_id": "ehi_buffs_perks_kingpin_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_kingpin",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_kingpin_injector_choice",
+            "title": "ehi_buffs_perks_kingpin_injector",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "kingpin", "injector" ],
+            "value": "injector",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_kingpin_injector_cooldown_choice",
+            "title": "ehi_buffs_perks_kingpin_injector_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "kingpin", "injector_cooldown" ],
+            "value": "injector_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

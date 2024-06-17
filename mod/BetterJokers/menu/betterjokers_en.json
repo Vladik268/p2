@@ -1,0 +1,20 @@
+{
+	"bj_title": "Better Jokers",
+	"bj_desc": "Options for Better Jokers",
+
+	"bj_joker_exclusive_access": "Exclusive Ownership",
+	"bj_joker_exclusive_access_desc": "If enabled, your jokers can only be called over or made to hold by you, and no one else.",
+	"bj_joker_my_contours": "Show My Contours",
+	"bj_joker_my_contours_desc": "If enabled, your joker outlines will be recolored to your client/peer color.",
+	"bj_joker_other_contours": "Show Other Contours",
+	"bj_joker_other_contours_desc": "If enabled, other people's joker outlines will be recolored to their client/peer color.",
+	"bj_joker_show_health": "Show Joker health",
+	"bj_joker_show_health_desc": "If enabled, joker units will have a health circle above their heads.",
+	"bj_disable_incompatibility_warnings": "Disable Incompatibility Warnings",
+	"bj_disable_incompatibility_warnings_desc": "Disables incompatibility warnings with other mods (like Keepers).",
+
+	"bjcwp_show_other_waypoints": "Show other people's waypoints",
+	"bjcwp_show_other_waypoints_desc": "If disabled, other people's waypoints will not be shown on the HUD.",
+
+	"bj_thanks": "Carkidd <3"
+}

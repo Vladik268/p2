@@ -1,0 +1,12 @@
+{
+	"name" : "Extended Continental Coin Shop Goonmod Standalone",
+	"description": "Continental Coins can be used to purchase masks and mask customization items in return for Continental Coins",
+	"author": "Wilko, Test1",
+	"blt_version": 2,
+	"priority" : 200,
+	"hooks" : [
+		{ "hook_id" : "lib/managers/localizationmanager", "script_path" : "Core.lua" },
+		{ "hook_id" : "lib/managers/menu/blackmarketgui", "script_path" : "Core.lua" },
+		{ "hook_id" : "lib/managers/blackmarketmanager", "script_path" : "Core.lua" }
+	]
+}

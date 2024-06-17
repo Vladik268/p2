@@ -1,0 +1,51 @@
+{
+    "menu_id": "ehi_buffs_perks_anarchist_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_anarchist",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_anarchist_continuous_armor_regen_choice",
+            "title": "ehi_buffs_perks_anarchist_continuous_armor_regen",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "anarchist", "continuous_armor_regen" ],
+            "value": "continuous_armor_regen",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_anarchist_immunity_choice",
+            "title": "ehi_buffs_perks_anarchist_immunity",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "anarchist", "immunity" ],
+            "value": "immunity",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_anarchist_immunity_cooldown_choice",
+            "title": "ehi_buffs_perks_anarchist_immunity_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "anarchist", "immunity_cooldown" ],
+            "value": "immunity_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_anarchist_kill_armor_regen_cooldown_choice",
+            "title": "ehi_buffs_perks_anarchist_kill_armor_regen_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "anarchist", "kill_armor_regen_cooldown" ],
+            "value": "kill_armor_regen_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

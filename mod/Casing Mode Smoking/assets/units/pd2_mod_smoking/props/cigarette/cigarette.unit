@@ -1,0 +1,11 @@
+<unit type="npc" slot="1">
+	<object file="units/pd2_mod_smoking/props/cigarette/cigarette"/>
+
+	<dependencies>
+		<depends_on effect="effects/particles/character/cigarette_smoke"/>
+	</dependencies>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+	</extensions>
+</unit>

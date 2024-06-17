@@ -1,0 +1,9 @@
+<mod name="Critical Perk Deck">
+	<AssetUpdates id="Critical Perk Deck" version="11">
+        <custom_provider version_api_url="https://drnewbie.github.io/CustomPerkDeck//UpdateProvider/Critical%20Perk%20Deck.txt" download_url="https://drnewbie.github.io/CustomPerkDeck//UpdateProvider/Critical%20Perk%20Deck.zip"/>
+    </AssetUpdates>
+	<Localization directory="Loc" default="EN.txt"/>
+	<AddFiles directory="Assets">
+		<texture path="guis/dlcs/mods/textures/pd2/specialization/icons_atlas" force="true"/>
+	</AddFiles>
+</mod>

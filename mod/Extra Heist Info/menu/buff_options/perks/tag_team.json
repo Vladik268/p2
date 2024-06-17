@@ -1,0 +1,44 @@
+{
+    "menu_id": "ehi_buffs_perks_tag_team_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_tag_team",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_tag_team_cooldown_choice",
+            "title": "ehi_buffs_perks_tag_team_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "tag_team", "cooldown" ],
+            "value": "cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type" : "divider",
+            "size" : 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_tag_team_effect_choice",
+            "title": "ehi_buffs_perks_tag_team_effect",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "tag_team", "effect" ],
+            "value": "effect",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_tag_team_tagged_choice",
+            "title": "ehi_buffs_perks_tag_team_tagged",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "tag_team", "tagged" ],
+            "value": "tagged",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

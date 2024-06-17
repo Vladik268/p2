@@ -1,0 +1,29 @@
+{
+    "menu_id": "ehi_buffs_perks_leech_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_leech",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_leech_ampule_choice",
+            "title": "ehi_buffs_perks_leech_ampule",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "leech", "ampule" ],
+            "value": "ampule",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_leech_ampule_cooldown_choice",
+            "title": "ehi_buffs_perks_leech_ampule_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "leech", "ampule_cooldown" ],
+            "value": "ampule_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

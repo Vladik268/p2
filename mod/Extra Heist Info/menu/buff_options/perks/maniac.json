@@ -1,0 +1,68 @@
+{
+    "menu_id": "ehi_buffs_perks_maniac_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_maniac",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_maniac_stack_choice",
+            "title": "ehi_buffs_perks_maniac_stack",
+            "description": "ehi_buffs_skills_progress",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "maniac", "stack" ],
+            "value": "stack",
+            "default_value": true,
+            "is_parent" : true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_maniac_stack_persistent_choice",
+            "title": "ehi_buffs_perks_maniac_stack_persistent",
+            "description": "ehi_buffs_perks_maniac_stack_persistent_desc",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "maniac", "stack_persistent" ],
+            "value": "stack_persistent",
+            "default_value": true,
+            "parent" : "ehi_buffs_perks_maniac_stack_choice",
+            "ehi_ver" : 204
+        },
+        {
+            "type": "slider",
+            "id": "ehi_buffs_perks_maniac_stack_refresh_choice",
+            "title": "ehi_buffs_perks_maniac_stack_refresh",
+            "description": "ehi_buffs_perks_maniac_stack_refresh_desc",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "maniac", "stack_refresh" ],
+            "value": "stack_refresh",
+            "parent" : "ehi_buffs_perks_maniac_stack_choice",
+            "default_value": 1,
+            "max": 10,
+            "min": 1,
+            "step": 0,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_maniac_stack_convert_rate_choice",
+            "title": "ehi_buffs_perks_maniac_stack_convert_rate",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "maniac", "stack_convert_rate" ],
+            "value": "stack_convert_rate",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_maniac_stack_choice",
+            "title": "ehi_buffs_perks_maniac_stack",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "maniac", "stack_decay" ],
+            "value": "stack_decay",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

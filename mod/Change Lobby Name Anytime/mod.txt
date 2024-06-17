@@ -1,0 +1,22 @@
+{
+	"name" : "Change Lobby Name Anytime",
+	"description" : "Lets you change your lobby's name to be anything you want, even while in-game and such. People in the Crime.net screen will see this custom name instead of your username. To use, type '/lobbyname blahblahblah' in chat while hosting. To set a description (not visible in Crime.net!), type '/lobbydesc blahblahblah'.",
+	"author" : "9600bauds, NewPJzuza for updating",
+	"contact" : "via Steam at id/9600bauds",
+	"version" : "1.212",
+	"blt_version" : 2,
+	"hooks" : [
+		{
+			"hook_id" : "lib/network/matchmaking/networkmatchmakingsteam",
+			"script_path" : "networkmatchmakingsteam.lua"
+		},
+                {
+			"hook_id" : "lib/network/matchmaking/networkmatchmakingepic",
+			"script_path" : "networkmatchmakingsteam.lua"
+		},
+		{
+			"hook_id" : "lib/managers/chatmanager",
+			"script_path" : "chatmanager.lua"
+		}
+	]
+}

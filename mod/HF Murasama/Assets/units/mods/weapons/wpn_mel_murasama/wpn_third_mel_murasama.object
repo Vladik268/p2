@@ -1,0 +1,9 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_mel_murasama/wpn_third_mel_murasama" orientation_object="rp_wpn_fps_mel_sandsteel" />
+	<graphics>
+		<object name="g_blade" enabled="true" />
+	</graphics>
+	<effects>
+        <effect_spawner name="effect_spawner_name" enabled="true" object="g_blade" effect="effects/payday2/particles/character/murasama" />
+    </effects>
+</dynamic_object>

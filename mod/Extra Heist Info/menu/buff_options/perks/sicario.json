@@ -1,0 +1,55 @@
+{
+    "menu_id": "ehi_buffs_perks_sicario_menu",
+    "parent_menu" : "ehi_buffs_perks_menu",
+    "title": "ehi_buffs_perks_sicario",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_sicario_smoke_bomb_choice",
+            "title": "ehi_buffs_perks_sicario_smoke_bomb",
+            "description": "ehi_buffs_skills_duration",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "sicario", "smoke_bomb" ],
+            "value": "smoke_bomb",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_sicario_smoke_bomb_cooldown_choice",
+            "title": "ehi_buffs_perks_sicario_smoke_bomb_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "sicario", "smoke_bomb_cooldown" ],
+            "value": "smoke_bomb_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type" : "divider",
+            "size" : 20
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_sicario_twitch_choice",
+            "title": "ehi_buffs_perks_sicario_twitch",
+            "description": "ehi_buffs_skills_value",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "sicario", "twitch" ],
+            "value": "twitch",
+            "default_value": true,
+            "ehi_ver" : 204
+        },
+        {
+            "type": "toggle",
+            "id": "ehi_buffs_perks_sicario_twitch_cooldown_choice",
+            "title": "ehi_buffs_perks_sicario_twitch_cooldown",
+            "description": "ehi_buffs_skills_cooldown",
+            "callback": "SetBuffDeckOption",
+            "callback_arguments": [ "sicario", "twitch_cooldown" ],
+            "value": "twitch_cooldown",
+            "default_value": true,
+            "ehi_ver" : 204
+        }
+    ]
+}

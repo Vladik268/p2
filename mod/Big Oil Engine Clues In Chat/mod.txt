@@ -1,0 +1,21 @@
+{
+    "name" : "Big Oil Engine Clues In Chat",
+    "description" : "Prints a system chat with all clues for Big Oil right engine via keybind.",
+    "author" : "Berk_Rider",
+    "contact" : "Berk_Rider",
+    "version" : "1.0",
+
+	"keybinds" : [
+				{
+            "keybind_id" : "clues",
+            "name" : "Big Oil Engine Clues",
+            "description" : "Gives all clues for the right engine in Big Oil.",
+            "script_path" : "clues.lua",
+            "run_in_menu" : false,
+            "run_in_game" : true,
+			"localized" : false
+	}
+    ]
+}
+
+
