@@ -1,0 +1,21 @@
+{
+  "xpb_keybind_name": "Abrir Menu",
+  "xpb_keybind_desc": "Define uma tecla de atalho para abrir o menu do XP Bank",
+  "xpb_menu_title": "XP Bank",
+  "xpb_menu_desc_level": "Você está atualmente no nível %d",
+  "xpb_menu_desc_balance": "\nVocê tem %s de XP armazenado",
+  "xpb_menu_desc_100": "\n\nVocê deve estar abaixo do nível 100 para sacar XP",
+  "xpb_menu_desc_low_bal": "\n\nVocê não possui XP suficiente para subir de nível",
+  "xpb_menu_desc_lvl_up": "\n\nVocê pode evoluir até o nível %d\nIsso irá custar %s de XP",
+  "xpb_menu_confirm": "Ok",
+  "xpb_menu_cancel": "Cancelar",
+  "xpb_menu_level": "Nível %d",
+  "xpb_menu_picker": "Escolher nível",
+  "xpb_menu_page_lower": "Descer",
+  "xpb_menu_page_higher": "Subir",
+  "xpb_menu_chosen_level": "Você escolheu o nível %d",
+  "xpb_menu_xp_deducted": "\nVocê sacou %s de XP da sua conta",
+  "xpb_menu_xp_balance": "\n\nVocê ainda tem %s de XP restante",
+  "xpb_game_deposited": "Depositado: %s | Saldo Atual: %s",
+  "xpb_game_limit_reached": "Limite de depósito atingido! | Saldo Atual: %s"
+}

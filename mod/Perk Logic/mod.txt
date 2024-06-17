@@ -1,0 +1,30 @@
+{
+	"name" : "Perk Logic",
+	"description" : "Auto use stoic/kingpin/leech perk.",
+	"author" : "Author: Playhouse/Mayzone",
+	"contact" : "Discord: Mayzone#2647",
+	"version" : "10",
+	"blt_version" : 2,
+	"image" : "vip.png",
+	"priority" : 1,
+	"undisablable" : false,
+	"disable_safe_mode" : true,
+	"hooks" : [
+		{ "hook_id" : "lib/player_actions/skills/playeractiondamagecontrol", "script_path" : "perks.lua" 
+		},
+		{ "hook_id" : "lib/units/beings/player/playerdamage", "script_path" : "perks.lua" 
+		},
+		{ "hook_id" : "lib/managers/playermanager", "script_path" : "perks.lua" 
+		},
+		{ "hook_id" : "lib/units/enemies/cop/copbrain", "script_path":"perks.lua"
+		},
+		{ "hook_id" : "lib/units/enemies/cop/huskcopbrain", "script_path":"perks.lua"
+		},
+		{ "hook_id" : "lib/managers/localizationmanager", "script_path"	: "perks.lua" 
+		},
+		{ "hook_id" : "lib/managers/localizationmanager", "script_path":"mod options.lua"
+		},
+		{ "hook_id" : "core/lib/setups/coresetup", "script_path":"loc/localization.lua"
+		}
+	]
+}

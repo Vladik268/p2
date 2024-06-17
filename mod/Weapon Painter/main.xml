@@ -1,0 +1,24 @@
+<table name="Weapon Painter" global_key="WeaponPainter" color="Color(0.6, 0.9, 0.1)" image="guis/mod_icons/weapon_painter" priority="-100">
+	<AssetUpdates id="24502" version="1.2.4" provider="modworkshop"/>
+
+	<Localization directory="localization" default="english.txt"/>
+
+	<Options name="Options" auto_build_menu="true" auto_load="true">
+		<options title_id="menu_weapon_painter_options" desc_id="menu_weapon_painter_options_desc">
+			<option type="bool" default_value="false" name="UnrestrictedWeaponIDs" title_id="menu_weapon_painter_unres_wids" desc_id="menu_weapon_painter_unres_wids_desc"/>
+		</options>
+	</Options>
+
+	<Hooks directory="hooks">
+		<hook file="weaponeditmodegui.lua" source_file="lib/managers/menu/multiprofileitemgui"/>
+		<hook file="blackmarketgui.lua" source_file="lib/managers/menu/blackmarketgui"/>
+		<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/>
+		<hook file="cosmeticsweaponbase.lua" source_file="lib/units/weapons/cosmeticsweaponbase"/>
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/menuraycastweaponbase"/>
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+	</Hooks>
+
+	<AddFiles directory="assets">
+		<texture path="guis/mod_icons/weapon_painter"/>
+	</AddFiles>
+</table>

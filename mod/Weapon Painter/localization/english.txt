@@ -1,0 +1,29 @@
+{
+	"bm_menu_weapon_mode_edit" : "Edit Mode",
+	"bm_menu_weapon_mode_paint" : "Paint Mode",
+
+	"bm_menu_clear_all" : "Clear All",
+	"bm_menu_clear_all_desc" : "Clean off the entire paintjob, returning the gun to it's pre-painted textures.",
+
+	"bm_menu_paint_presets" : "Paint Presets",
+
+	"bm_menu_bolt" : "Bolt",
+	"bm_menu_cylinder" : "Cylinder",
+	"bm_menu_drag_handle" : "Drag Handle",
+	"bm_menu_ejector" : "Ejector",
+	"bm_menu_ejectorpin" : "Ejector Pin",
+	"bm_menu_foregrip_ext" : "Foregrip Extra",
+	"bm_menu_lock_arm" : "Lock Arm",
+	"bm_menu_lower_receiver" : "Lower Receiver",
+	"bm_menu_stock_adapter" : "Stock Adapter",
+	"bm_menu_switch" : "Switch",
+	"bm_menu_swiwel_1" : "Swivel 1",
+	"bm_menu_swiwel_2" : "Swivel 2",
+	"bm_menu_sight_special" : "Sight Special"
+
+	"menu_weapon_painter_options" : "Weapon Painter",
+	"menu_weapon_painter_options_desc" : "Options for Weapon Painter",
+
+	"menu_weapon_painter_unres_wids" : "Unrestricted Weapon IDs",
+	"menu_weapon_painter_unres_wids_desc" : "Removes the weapon ID restrictions for wepaon skins"
+}

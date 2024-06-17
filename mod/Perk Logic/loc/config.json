@@ -1,0 +1,14 @@
+{
+  "config": {
+    "auto_use_king_injector": false,
+    "auto_use_leech_ampule": false,
+    "auto_use_stoic_flash": true,
+    "bullseye_restore_health": true,
+    "bullseye_restore_percentage": 1,
+    "damage_over_time_percentage": 0.16417836822585,
+    "enemies_in_unit_camera_range": 2,
+    "kingpin_health_activation_percentage": 0.6,
+    "prevent_miss_press": true,
+    "use_armor_for_Stoic": true
+  }
+}

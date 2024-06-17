@@ -1,0 +1,40 @@
+{
+	"name": "Waypoints",
+	"description": "Adds waypoints to your HUD that show you various things.\nCheck the configuration tab in Mod Configuration to see what it can show you.",
+	"author": "gir489",
+	"version": "4.04",
+	"priority": 500,
+	"blt_version" : 2, 
+	"keybinds": [
+		{
+			"keybind_id": "WaypointHotkey",
+			"name": "Waypoints",
+			"description": "Puts waypoints on your HUD for certain mission-related items.",
+			"script_path": "waypoints.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "DumpMissionScript",
+			"name": "DumpMissionScripts",
+			"description": "Key to serialize current mission's script to disk.\nFor debugging only.",
+			"script_path": "DumpMissionScripts.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "DebugWaypoints",
+			"name": "DebugWaypoints",
+			"description": "Key to debug waypoints.",
+			"script_path": "DebugWaypoints.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		}
+	]
+	"hooks" : [
+		{ "hook_id" : "lib/managers/menumanager", "script_path" : "menu.lua" }
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Use Ability While Shooting",
+	"description": "Allows To Use Perk Deck abilities while Run'n Gunning",
+	"author" : "jMPL",
+	"contact" : "https://modworkshop.net/user/jMPL",
+	"version" : "1.0",
+	"blt_version" : 2,
+	"color" : "255 0 221"
+	"image": "use-ability-while-shooting.png",
+	"hooks": [
+		{
+			"hook_id" : "lib/units/beings/player/states/playerstandard",
+			"script_path" : "playerstandard.lua"
+		}
+	]
+}

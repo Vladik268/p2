@@ -1,0 +1,8 @@
+{
+	"name" : "Weapon Painter",
+	"description" : "A mod which allows both users and developers to expand upon a weapons customisation through the use of paints.",
+	"author" : "Cpone",
+	"color" : "153 230 26",
+	"blt_version" : 2,
+	"image" : "assets/guis/mod_icons/weapon_painter.texture"
+}

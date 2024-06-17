@@ -1,0 +1,46 @@
+{
+	"menu_id" : "circle_ui_menu",
+	"parent_menu_id" : "blt_options",
+	"title" : "circle_ui_title",
+	"description":"circle_ui_desc",
+	"back_callback" : "circle_ui_closed",
+	"items" : [
+		{
+			"type" : "multiple_choice",
+			"id" : "circle_ui_on_state_change",
+			"title" : "circle_ui_on_state_change_title",
+			"description" : "circle_ui_on_state_change_desc",
+			"callback" : "circle_ui_on_state_change_callback",
+			"items" : [
+				"pastel_pink_circleui",
+        		"purple_circleui",
+        		"aqua_circleui",
+        		"strawb_circleui",
+        		"orange_circleui",
+        		"red_circleui",
+        		"navy_circleui",
+        		"pink_circleui",
+        		"lilac_circleui",
+        		"black_circleui",
+        		"blue_violet_circleui",
+        		"white_circleui",
+				"green_circleui"
+			],
+			"value" : "circle_ui_color",
+			"default_value" : 12
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "experimentalFeature_change",
+			"title" : "experimentalFeature_change_title",
+			"description" : "experimentalFeature_change_desc",
+			"callback" : "experimentalFeature_change_callback",
+			"items" : [
+				"off_circleui",
+        		"on_circleui"
+			],
+			"value" : "experimentalFeature",
+			"default_value" : 1
+		}
+	]
+}

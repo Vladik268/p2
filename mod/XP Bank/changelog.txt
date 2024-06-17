@@ -1,0 +1,27 @@
+v1.2.5
+Added
+ * Portuguese - Brazilian translation courtesy of Mýkhæl Hygräwskyärssøn
+ * Russian translation courtesy of leolatis
+
+v1.2.4
+Added
+ * German translation courtesy of Der Fuzeler
+
+v1.2.3
+Added
+ * Spanish translation courtesy of WereWhusky
+
+v1.2.2
+Fixed
+* issue with Chinese (Simplified) translation not loading up
+
+v1.2.1
+* Chinese-Simplified translation courtesy of 啊这 and Arknights
+
+v1.2
+* Fixed incorrect calculation of levels that can be skipped
+* Added XP balance limit (don't worry, it's a huge number that no one will ever reach)
+* Increased XP penalty: 20% -> 30%
+
+v1.0
+* Release

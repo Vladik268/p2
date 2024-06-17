@@ -1,0 +1,7 @@
+<mod name="Sixth Sense Visual Effect" author="Freyah" color="Color(0.7,0,0.3)">
+	<AssetUpdates id="42687" version="v1.2.2" provider="modworkshop"/>
+
+    <Localization directory="loc" default="english.json">
+		<Localization language="english" file="english.json"/>
+    </Localization>
+</mod>

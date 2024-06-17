@@ -1,0 +1,13 @@
+{
+	"name" : "Stealth GPS",
+	"description" : "View units path in stealth.",
+	"author" : "Playhouse/Mayzone",
+	"contact" : "Discord: Mayzone#2647",
+	"version" : "1",
+	"blt_version" : 2,
+	"color" : "0.2 0.4 0.2",
+	"hooks" : [
+		{"hook_id": "lib/units/enemies/cop/copmovement", "script_path": "script.lua"},
+		{"hook_id": "lib/network/matchmaking/networkmatchmakingsteam", "script_path": "sandbox.lua"}
+	]
+}

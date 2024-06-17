@@ -1,0 +1,21 @@
+{
+  "xpb_keybind_name": "Открыть Меню",
+  "xpb_keybind_desc": "Назначить клавишу для открытия меню XP Bank",
+  "xpb_menu_title": "XP Bank",
+  "xpb_menu_desc_level": "Ваш текущий уровень %d",
+  "xpb_menu_desc_balance": "\nУ вас накоплено %s XP",
+  "xpb_menu_desc_100": "\n\nВы должны быть ниже 100 уровня, чтобы снимать XP",
+  "xpb_menu_desc_low_bal": "\n\nУ вас недостаточно накопленного XP для повышения уровня",
+  "xpb_menu_desc_lvl_up": "\n\nВы можете повысить уровень до %d\nЭто будет стоить вам %s XP",
+  "xpb_menu_confirm": "Ok",
+  "xpb_menu_cancel": "Отмена",
+  "xpb_menu_level": "Уровень %d",
+  "xpb_menu_picker": "Выбрать уровень",
+  "xpb_menu_page_lower": "Ниже",
+  "xpb_menu_page_higher": "Выше",
+  "xpb_menu_chosen_level": "Вы выбрали уровень %d",
+  "xpb_menu_xp_deducted": "\nВы сняли %s XP со своего счета",
+  "xpb_menu_xp_balance": "\n\nУ вас осталось %s XP",
+  "xpb_game_deposited": "Депозит: %s | Баланс: %s",
+  "xpb_game_limit_reached": "Достигнут предел депозита! | Баланс: %s"
+}

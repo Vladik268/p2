@@ -1,0 +1,23 @@
+{
+ "circle_ui_on_state_change_title" : "CIRCLE COLOR",
+ "circle_ui_on_state_change_desc" : "CHANGE CIRCLE COLOR",
+ "circle_ui_title" : "SIXTH SENSE VISUAL EFFECT",
+ "circle_ui_desc" : "",
+ "black_circleui" : "BLACK",
+ "pastel_pink_circleui" : "PINK",
+ "pink_circleui" : "HOT PINK",
+ "aqua_circleui" : "AQUA",
+ "orange_circleui" : "ORANGE",
+ "navy_circleui" : "DARK BLUE",
+ "purple_circleui" : "PURPLE",
+ "blue_violet_circleui" : "LIGHT PURPLE",
+ "strawb_circleui" : "STRAWBERRY",
+ "lilac_circleui" : "LILAC",
+ "white_circleui" : "WHITE",
+ "green_circleui" : "GREEN",
+ "red_circleui" : "RED",
+ "off_circleui" : "DISABLED",
+ "on_circleui" : "ENABLED",
+ "experimentalFeature_change_title" : "COLLISION DETECTION",
+ "experimentalFeature_change_desc" : "MAKES CIRCLE APPEAR HIGHER IF IT DETECTS COLLISION WITH OBJECT (FOR EXAMPLE WITH STREET CRUB) TO TRY MAKE IT STAY VISIBLE. THIS IS EXPERIMENTAL, USE AT YOUR OWN RISK! IT WAS NOT TESTED IN ALL SCENARIOS!"
+}
